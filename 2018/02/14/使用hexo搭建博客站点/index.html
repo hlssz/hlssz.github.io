@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="架设在GitHub上的使用hexo实现的博客详细步骤。 ##一、所需程序的下载与安装 ###1、Git安装Git的下载地址https://gitforwindows.org/，完全“下一步”式安装。 ###2、node.js安装node.js的下载地址https://nodejs.org/en/，完全“下一步”式安装。 ###3、安装hexo第一步：在任意位置点击鼠标右键，选择Git Bash第二">
+<meta name="description" content="架设在GitHub上的使用hexo实现的博客详细步骤。 一、所需程序的下载与安装1、Git安装Git的下载地址https://gitforwindows.org/，完全“下一步”式安装。 2、node.js安装node.js的下载地址https://nodejs.org/en/，完全“下一步”式安装。 3、安装hexo第一步：在任意位置点击鼠标右键，选择Git Bash第二步：输入命令： 1$ n">
 <meta name="keywords" content="hexo,nexT,git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用hexo搭建博客">
 <meta property="og:url" content="http://yoursite.com/2018/02/14/使用hexo搭建博客站点/index.html">
 <meta property="og:site_name" content="戏中人">
-<meta property="og:description" content="架设在GitHub上的使用hexo实现的博客详细步骤。 ##一、所需程序的下载与安装 ###1、Git安装Git的下载地址https://gitforwindows.org/，完全“下一步”式安装。 ###2、node.js安装node.js的下载地址https://nodejs.org/en/，完全“下一步”式安装。 ###3、安装hexo第一步：在任意位置点击鼠标右键，选择Git Bash第二">
+<meta property="og:description" content="架设在GitHub上的使用hexo实现的博客详细步骤。 一、所需程序的下载与安装1、Git安装Git的下载地址https://gitforwindows.org/，完全“下一步”式安装。 2、node.js安装node.js的下载地址https://nodejs.org/en/，完全“下一步”式安装。 3、安装hexo第一步：在任意位置点击鼠标右键，选择Git Bash第二步：输入命令： 1$ n">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-14T09:30:57.863Z">
+<meta property="og:updated_time" content="2018-02-14T09:42:49.231Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo搭建博客">
-<meta name="twitter:description" content="架设在GitHub上的使用hexo实现的博客详细步骤。 ##一、所需程序的下载与安装 ###1、Git安装Git的下载地址https://gitforwindows.org/，完全“下一步”式安装。 ###2、node.js安装node.js的下载地址https://nodejs.org/en/，完全“下一步”式安装。 ###3、安装hexo第一步：在任意位置点击鼠标右键，选择Git Bash第二">
+<meta name="twitter:description" content="架设在GitHub上的使用hexo实现的博客详细步骤。 一、所需程序的下载与安装1、Git安装Git的下载地址https://gitforwindows.org/，完全“下一步”式安装。 2、node.js安装node.js的下载地址https://nodejs.org/en/，完全“下一步”式安装。 3、安装hexo第一步：在任意位置点击鼠标右键，选择Git Bash第二步：输入命令： 1$ n">
 
 
 
@@ -353,14 +353,18 @@
 
       
         <p>架设在GitHub上的使用hexo实现的博客详细步骤。</p>
-<p>##一、所需程序的下载与安装</p>
-<p>###1、Git安装<br>Git的下载地址<a href="https://gitforwindows.org/" target="_blank" rel="noopener">https://gitforwindows.org/</a>，完全“下一步”式安装。</p>
-<p>###2、node.js安装<br>node.js的下载地址<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a>，完全“下一步”式安装。</p>
-<p>###3、安装hexo<br>第一步：在任意位置点击鼠标右键，选择Git Bash<br>第二步：输入命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure></p>
-<p>第三步：初始化Hexo<br>a.创建根目录Hexo<br>b.在根目录下，右键运行Git Bash，输入命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
-<p>c.站点配置文件_config.yml,进行基础配置<br>获取主题方式：输入命令：git clone <a href="https://github.com/iissnan/hexo-theme-nextthemes/next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-nextthemes/next</a><br>d.本地浏览博客，在浏览器输入：localhost:4000进行本地访问<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s --debug</span><br></pre></td></tr></table></figure></p>
-<p>###4、发布博客到GitHub<br>a.设置身份信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"你的用户名"</span></span><br><span class="line">$ git config --global user.email <span class="string">"你的邮箱"</span></span><br></pre></td></tr></table></figure></p>
-<p>b.安装发布工具：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm instal hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<h2 id="一、所需程序的下载与安装"><a href="#一、所需程序的下载与安装" class="headerlink" title="一、所需程序的下载与安装"></a>一、所需程序的下载与安装</h2><h3 id="1、Git安装"><a href="#1、Git安装" class="headerlink" title="1、Git安装"></a>1、Git安装</h3><p>Git的下载地址<a href="https://gitforwindows.org/" target="_blank" rel="noopener">https://gitforwindows.org/</a>，完全“下一步”式安装。</p>
+<h3 id="2、node-js安装"><a href="#2、node-js安装" class="headerlink" title="2、node.js安装"></a>2、node.js安装</h3><p>node.js的下载地址<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a>，完全“下一步”式安装。</p>
+<h3 id="3、安装hexo"><a href="#3、安装hexo" class="headerlink" title="3、安装hexo"></a>3、安装hexo</h3><p>第一步：在任意位置点击鼠标右键，选择Git Bash<br>第二步：输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
+<p>第三步：初始化Hexo<br>a.创建根目录Hexo<br>b.在根目录下，右键运行Git Bash，输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+<p>c.站点配置文件_config.yml,进行基础配置<br>获取主题方式：输入命令：git clone <a href="https://github.com/iissnan/hexo-theme-nextthemes/next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-nextthemes/next</a><br>d.本地浏览博客，在浏览器输入：localhost:4000进行本地访问</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s --debug</span><br></pre></td></tr></table></figure>
+<h2 id="二、发布博客到GitHub"><a href="#二、发布博客到GitHub" class="headerlink" title="二、发布博客到GitHub"></a>二、发布博客到GitHub</h2><p>a.设置身份信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"你的用户名"</span></span><br><span class="line">$ git config --global user.email <span class="string">"你的邮箱"</span></span><br></pre></td></tr></table></figure>
+<p>b.安装发布工具：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm instal hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>c.每次可以通过 hexo d -g 进行发布更新</p>
 
       
@@ -456,8 +460,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -517,6 +530,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、所需程序的下载与安装"><span class="nav-number">1.</span> <span class="nav-text">一、所需程序的下载与安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、Git安装"><span class="nav-number">1.1.</span> <span class="nav-text">1、Git安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、node-js安装"><span class="nav-number">1.2.</span> <span class="nav-text">2、node.js安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、安装hexo"><span class="nav-number">1.3.</span> <span class="nav-text">3、安装hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、发布博客到GitHub"><span class="nav-number">2.</span> <span class="nav-text">二、发布博客到GitHub</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
