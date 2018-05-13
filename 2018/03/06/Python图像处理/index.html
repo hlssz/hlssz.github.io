@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="戏中人">
 <meta property="og:description" content="1.颜色与RGBA值：计算机通常将图像表示为RGB值，或者再加上alpha值（通透度，透明度），称为RGBA值。在Pillow中，RGBA的值表示为由4个整数组成的元组，分别是R、G、B、A。整数的范围0~255。RGB全0就可以表示黑色，全255代表黑色。可以猜测(255, 0, 0, 255)代表红色，因为R分量最大，G、B分量为0，所以呈现出来是红色。但是当alpha值为0时，无论是什么颜色">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-06T02:48:21.036Z">
+<meta property="og:updated_time" content="2018-03-28T06:48:31.239Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="七月题库Java笔记">
 <meta name="twitter:description" content="1.颜色与RGBA值：计算机通常将图像表示为RGB值，或者再加上alpha值（通透度，透明度），称为RGBA值。在Pillow中，RGBA的值表示为由4个整数组成的元组，分别是R、G、B、A。整数的范围0~255。RGB全0就可以表示黑色，全255代表黑色。可以猜测(255, 0, 0, 255)代表红色，因为R分量最大，G、B分量为0，所以呈现出来是红色。但是当alpha值为0时，无论是什么颜色">
@@ -358,7 +358,9 @@
 <h2 id="3-使用pillow操作图像"><a href="#3-使用pillow操作图像" class="headerlink" title="3.使用pillow操作图像"></a>3.使用pillow操作图像</h2><p>openCV中是imread(),pillow中是open()。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">from PIL import Image</span><br><span class="line"></span><br><span class="line">im_path = r<span class="string">'F:\Jupyter Notebook\csv_time_datetime_PIL\rabbit.jpg'</span></span><br><span class="line">im = Image.open(im_path)</span><br><span class="line">width, height = im.size</span><br><span class="line"><span class="comment"># 宽高</span></span><br><span class="line"><span class="built_in">print</span>(im.size, width, height)</span><br><span class="line"><span class="comment"># 格式，以及格式的详细描述</span></span><br><span class="line"><span class="built_in">print</span>(im.format, im.format_description)</span><br><span class="line"></span><br><span class="line">im.save(r<span class="string">'C:\Users\Administrator\Desktop\rabbit_copy.jpg'</span>)</span><br><span class="line">im.show()</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(1920, 1080) 1920 1080</span><br><span class="line">JPEG JPEG (ISO 10918)</span><br></pre></td></tr></table></figure>
 <p>im.size返回一个元组，分别是宽和高。show()方法会调用系统默认图像查看软件，打开并显示。im.format可查看图像的格式。save()可保存处理后的图片，如果未经处理，保存后的图像占用的空间(字节数)一般也与原图像不一样，可能经过了压缩。</p>
-<h2 id="4-新建图像"><a href="#4-新建图像" class="headerlink" title="4.新建图像"></a>4.新建图像</h2>
+<h2 id="4-新建图像"><a href="#4-新建图像" class="headerlink" title="4.新建图像"></a>4.新建图像</h2><p>Image.new()函数可以用来新建图像，第一个参数是mode即颜色空间模式，第二个参数指定了图像的分辨率(宽x高)，第三个参数是颜色。<br><em>可以直接填入常用颜色的名称。如’red’
+</em>也可以填入十六进制表示的颜色，如#FF0000表示红色。<br>*还能传入元组，比如(255, 0, 0, 255)或者(255， 0， 0)表示红色。</p>
+
       
     </div>
 	
@@ -492,7 +494,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -514,7 +516,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
