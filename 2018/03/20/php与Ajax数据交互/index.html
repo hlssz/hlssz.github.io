@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hexo,nexT,git," />
+  <meta name="keywords" content="php,Ajax," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="ceshi.html&amp;lt;!DOCTYPE html&amp;gt; function showHint(str){  var xmlhttp;  if (str.length==0)  {    document.getElementById(“txtHint”).innerHTML=””;    return;  }  if (window.XMLHttpRequest)  {    // IE7+">
-<meta name="keywords" content="hexo,nexT,git">
+<meta name="description" content="ceshi.html123456789101112131415161718192021222324252627282930313233343536373839404142434445&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;meta charset=&quot;utf-8&quot;&amp;gt;&amp;lt;script&amp;gt;function showHint(str)">
+<meta name="keywords" content="php,Ajax">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP与Ajax数据交互">
 <meta property="og:url" content="http://yoursite.com/2018/03/20/php与Ajax数据交互/index.html">
 <meta property="og:site_name" content="戏中人">
-<meta property="og:description" content="ceshi.html&amp;lt;!DOCTYPE html&amp;gt; function showHint(str){  var xmlhttp;  if (str.length==0)  {    document.getElementById(“txtHint”).innerHTML=””;    return;  }  if (window.XMLHttpRequest)  {    // IE7+">
+<meta property="og:description" content="ceshi.html123456789101112131415161718192021222324252627282930313233343536373839404142434445&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;meta charset=&quot;utf-8&quot;&amp;gt;&amp;lt;script&amp;gt;function showHint(str)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-13T13:09:30.710Z">
+<meta property="og:updated_time" content="2018-07-11T13:56:05.968Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP与Ajax数据交互">
-<meta name="twitter:description" content="ceshi.html&amp;lt;!DOCTYPE html&amp;gt; function showHint(str){  var xmlhttp;  if (str.length==0)  {    document.getElementById(“txtHint”).innerHTML=””;    return;  }  if (window.XMLHttpRequest)  {    // IE7+">
+<meta name="twitter:description" content="ceshi.html123456789101112131415161718192021222324252627282930313233343536373839404142434445&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;meta charset=&quot;utf-8&quot;&amp;gt;&amp;lt;script&amp;gt;function showHint(str)">
 
 
 
@@ -315,8 +315,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index">
-                    <span itemprop="name">git</span>
+                  <a href="/categories/php/" itemprop="url" rel="index">
+                    <span itemprop="name">php</span>
                   </a>
                 </span>
 
@@ -352,23 +352,8 @@
       
 
       
-        <h2 id="ceshi-html"><a href="#ceshi-html" class="headerlink" title="ceshi.html"></a>ceshi.html</h2><p>&lt;!DOCTYPE html&gt;</p>
-<html><br><head><br><meta charset="utf-8"><br><script><br>function showHint(str)<br>{<br>  var xmlhttp;<br>  if (str.length==0)<br>  {<br>    document.getElementById(“txtHint”).innerHTML=””;<br>    return;<br>  }<br>  if (window.XMLHttpRequest)<br>  {<br>    // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码<br>    xmlhttp=new XMLHttpRequest();<br>  }<br>  else<br>  {<br>    // IE6, IE5 浏览器执行代码<br>    xmlhttp=new ActiveXObject(“Microsoft.XMLHTTP”);<br>  }<br>  xmlhttp.onreadystatechange=function()<br>  {<br>    if (xmlhttp.readyState==4 &amp;&amp; xmlhttp.status==200)<br>    {<br>      document.getElementById(“txtHint”).innerHTML=xmlhttp.responseText;<br>    }<br>  }<br>  xmlhttp.open(“GET”,”/try/sgethint.php?q=”+str,true);<br>  xmlhttp.send();<br>}<br></script><br></head><br><body><br><br><h3>在输入框中尝试输入字母 a:</h3><br><form action=""><br>输入姓名: <input type="text" id="txt1" onkeyup="showHint(this.value)"><br></form><br><p>提示信息: <span id="txtHint"></span></p><br><br></body><br></html>
-
-<h2 id="gethint-php"><a href="#gethint-php" class="headerlink" title="gethint.php"></a>gethint.php</h2><p>&lt;?php<br>    $str = $_GET[‘q’];</p>
-<pre><code>$c = mysql_connect(&quot;127.0.0.1&quot;, &quot;root&quot;, &quot;root&quot;);
-if(!$c){
-    echo &quot;connection defeat!&lt;br /&gt;&quot;;
-}
-mysql_query(&quot;SET NAMES &apos;utf8&apos;&quot;);
-mysql_select_db(&quot;test&quot;,$c);
-$sql = &quot;SELECT * FROM student WHERE name like &apos;%$str%&apos;&quot;;
-$result = mysql_query($sql,$c);
-while($row = mysql_fetch_assoc($result)){
-    echo htmlentities($row[&apos;name&apos;]).&apos;,&apos;;
-}
-</code></pre><p>?&gt;</p>
-
+        <h2 id="ceshi-html"><a href="#ceshi-html" class="headerlink" title="ceshi.html"></a>ceshi.html</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line"><span class="keyword">function</span> showHint(str)</span><br><span class="line">&#123;</span><br><span class="line">  var xmlhttp;</span><br><span class="line">  <span class="keyword">if</span> (str.length==0)</span><br><span class="line">  &#123; </span><br><span class="line">    document.getElementById(<span class="string">"txtHint"</span>).innerHTML=<span class="string">""</span>;</span><br><span class="line">    <span class="built_in">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (window.XMLHttpRequest)</span><br><span class="line">  &#123;</span><br><span class="line">    // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码</span><br><span class="line">    xmlhttp=new XMLHttpRequest();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">  &#123;</span><br><span class="line">    // IE6, IE5 浏览器执行代码</span><br><span class="line">    xmlhttp=new ActiveXObject(<span class="string">"Microsoft.XMLHTTP"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  xmlhttp.onreadystatechange=<span class="keyword">function</span>()</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">if</span> (xmlhttp.readyState==4 &amp;&amp; xmlhttp.status==200)</span><br><span class="line">    &#123;</span><br><span class="line">      document.getElementById(<span class="string">"txtHint"</span>).innerHTML=xmlhttp.responseText;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"/try/sgethint.php?q="</span>+str,<span class="literal">true</span>);</span><br><span class="line">  xmlhttp.send();</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h3&gt;在输入框中尝试输入字母 a:&lt;/h3&gt;</span><br><span class="line">&lt;form action=<span class="string">""</span>&gt; </span><br><span class="line">输入姓名: &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> id=<span class="string">"txt1"</span> onkeyup=<span class="string">"showHint(this.value)"</span> /&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;p&gt;提示信息: &lt;span id=<span class="string">"txtHint"</span>&gt;&lt;/span&gt;&lt;/p&gt; </span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="gethint-php"><a href="#gethint-php" class="headerlink" title="gethint.php"></a>gethint.php</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">	<span class="variable">$str</span> = <span class="variable">$_GET</span>[<span class="string">'q'</span>];</span><br><span class="line">	</span><br><span class="line">	<span class="variable">$c</span> = mysql_connect(<span class="string">"127.0.0.1"</span>, <span class="string">"root"</span>, <span class="string">"root"</span>);</span><br><span class="line">	<span class="keyword">if</span>(!<span class="variable">$c</span>)&#123;</span><br><span class="line">		<span class="built_in">echo</span> <span class="string">"connection defeat!&lt;br /&gt;"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	mysql_query(<span class="string">"SET NAMES 'utf8'"</span>);</span><br><span class="line">	mysql_select_db(<span class="string">"test"</span>,<span class="variable">$c</span>);</span><br><span class="line">	<span class="variable">$sql</span> = <span class="string">"SELECT * FROM student WHERE name like '%<span class="variable">$str</span>%'"</span>;</span><br><span class="line">	<span class="variable">$result</span> = mysql_query(<span class="variable">$sql</span>,<span class="variable">$c</span>);</span><br><span class="line">	<span class="keyword">while</span>(<span class="variable">$row</span> = mysql_fetch_assoc(<span class="variable">$result</span>))&#123;</span><br><span class="line">		<span class="built_in">echo</span> htmlentities(<span class="variable">$row</span>[<span class="string">'name'</span>]).<span class="string">','</span>;</span><br><span class="line">	&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
       
     </div>
 	
@@ -396,11 +381,9 @@ while($row = mysql_fetch_assoc($result)){
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/php/" rel="tag"># php</a>
           
-            <a href="/tags/nexT/" rel="tag"># nexT</a>
-          
-            <a href="/tags/git/" rel="tag"># git</a>
+            <a href="/tags/Ajax/" rel="tag"># Ajax</a>
           
         </div>
       
@@ -502,7 +485,7 @@ while($row = mysql_fetch_assoc($result)){
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -513,7 +496,7 @@ while($row = mysql_fetch_assoc($result)){
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -524,7 +507,7 @@ while($row = mysql_fetch_assoc($result)){
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -557,7 +540,7 @@ while($row = mysql_fetch_assoc($result)){
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ceshi-html"><span class="nav-number">1.</span> <span class="nav-text">ceshi.html</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">在输入框中尝试输入字母 a:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gethint-php"><span class="nav-number">2.</span> <span class="nav-text">gethint.php</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ceshi-html"><span class="nav-number">1.</span> <span class="nav-text">ceshi.html</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gethint-php"><span class="nav-number">2.</span> <span class="nav-text">gethint.php</span></a></li></ol></div>
             
 
           </div>
